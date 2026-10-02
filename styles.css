@@ -1,0 +1,18 @@
+h1 { 
+    color: green;
+    background-color: yellow;
+    text-align: center;
+}
+h2 { 
+    text-decoration: underline;
+    color: white;
+}
+body {
+    background-color: black;
+}
+.small {
+    width: 200px;
+}
+a {
+    color: white;
+}
