@@ -1,18 +1,68 @@
-h1 { 
-    color: green;
-    background-color: yellow;
-    text-align: center;
-}
-h2 { 
-    text-decoration: underline;
-    color: white;
+* {
+    /* border-style: solid; */
+    /* border-color: blue; */
 }
 body {
-    background-color: #7c7c7c;
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
 }
-.small {
-    width: 200px;
+.main-header {
+    padding: 15px 30px;
+    background-color: #06042d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
 }
-a {
-    color: white;
+.main-navigation a{
+    color: bisque;
+    text-decoration: none; 
+    font-family: "Bungee", sans-serif;
+    padding: 15px;
+}
+.main-navigation a:hover {
+    color: #06042d;
+    background-color:bisque;
+}
+.main-navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.logo {
+    width: 100px;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+.home-banner {
+    background-color: burlywood;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Bungee", sans-serif;
+    font-size: x-large;
+    background-image: url("images/pexels-wyxina-tresse-311038210-40596368.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.home-banner h1 {
+    text-shadow: 0px 0px 1px #000000;
+    color: bisque;
+}
+.content {
+    margin: 2em 12em;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+.card img{
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    object-position: center;
 }
