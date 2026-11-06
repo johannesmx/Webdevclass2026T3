@@ -2,24 +2,118 @@
 <html lang="en">
 
 <head>
-    <title>Contact Page</title>
+    <title>Home Page</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>
+    <header class="main-header">
         <a href="index.html">
-            <img src="globe-solid.png" alt="globe logo">
+            <img class="logo" src="globe-solid.png" alt="globe logo">
         </a>
-        <nav>
+        <nav class="main-navigation">
             <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-    <h1>Contact Page</h1>
+    <div></div>
+    <!-- <div class="home-banner">
+        <h1>Welcome to my website</h1>
+    </div> -->
+    <main class="content">
+        <div class="row">
+            <div class="card">
+                <h2>Get in touch</h2>
+                <p>You can contact me via email</p>
+                <a class="contact-email" href="mailto:me@example.com">me@example.com</a>
+                <p>You can also contact me via phone</p>
+                <a class="contact-phone" href="tel:1234567890">123 456 7890</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <form id="contact" method="post" action="https://example.com">
+                    <h2>Contact Form</h2>
+                    <label for="username">Your name</label>
+                    <input type="text" id="username" name="username" placeholder="Jane Smith">
+                    <label for="useremail">Your email</label>
+                    <input type="email" id="useremail" name="useremail" placeholder="jane@example.com">
+                    <label for="usermessage">Message</label>
+                    <textarea cols="60" rows="5" id="usermessage" name="usermessage" placeholder="Hey there"></textarea>
+                    <div class="row form-buttons">
+                        <button type="submit">Send</button>
+                        <button type="reset">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- row 1 -->
+        <!-- <div class="row">
+            <div class="card">
+                <img src="images/pexels-lpfstudio023-31771054.jpg">
+                <h3>Image 1 Caption</h3>
+                <p>About image 1</p>
+            </div>
+            <div class="card">
+                <img src="images/pexels-newman-photographs-234743505-31970812.jpg">
+                <h3>Image 1 Caption</h3>
+                <p>About image 1</p>
+            </div>
+            <div class="card">
+                <img src="images/pexels-mikhail-vassiliev-2165193417-40530716.jpg">
+                <h3>Image 1 Caption</h3>
+                <p>About image 1</p>
+            </div>
+             <div class="card">
+                <img src="images/pexels-mikhail-vassiliev-2165193417-40530716.jpg">
+                <h3>Image 1 Caption</h3>
+                <p>About image 1</p>
+            </div>
+        </div> -->
+        <!-- row 2 -->
+        <!-- <div class="row">
+            <div class="card">
+                <img src="images/pexels-lpfstudio023-31771054.jpg">
+                <h3>Image 1 Caption</h3>
+                <p>About image 1</p>
+            </div>
+            <div class="card">
+                <img src="images/pexels-newman-photographs-234743505-31970812.jpg">
+                <h3>Image 1 Caption</h3>
+                <p>About image 1</p>
+            </div>
+            <div class="card">
+                <img src="images/pexels-mikhail-vassiliev-2165193417-40530716.jpg">
+                <h3>Image 1 Caption</h3>
+                <p>About image 1</p>
+            </div>
+        </div> -->
+    </main>
+    <footer class="main-footer">
+        <nav class="social-links">
+            <a href="https://facebook.com" aria-label="Facebook profile">
+                <i class="fa-brands fa-square-facebook"></i>
+            </a>
+            <a href="https://instagram.com" arial-label="Instagram profile">
+                <i class="fa-brands fa-square-instagram"></i>
+            </a>
+            <a href="https://tiktok.com" aria-label="TikTok profile">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+        </nav>
+        <p class="copyright">&copy; Johannes 2026</p>
+    </footer>
 </body>
 
 </html>

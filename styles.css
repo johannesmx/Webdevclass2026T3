@@ -5,6 +5,13 @@
 body {
     margin: 0px;
     font-family: "Roboto", sans-serif;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
 }
 .main-header {
     padding: 15px 30px;
@@ -65,4 +72,53 @@ img {
     aspect-ratio: 3/4;
     object-fit: cover;
     object-position: center;
+}
+
+.main-footer {
+    background-color: #06042d;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.social-links a {
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.copyright {
+    color: white;
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+}
+
+/* contact form */
+#contact {
+    display: flex;
+    flex-direction: column;
+}
+.form-buttons {
+    justify-content: space-between;
+}
+#contact input, #contact textarea {
+    display: block;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: solid #eeeeee 2px;
+    border-radius: 6px;
+}
+button[type=submit] {
+    background-color: green;
+    color: white;
+    padding: 5px;
+    min-width: 15ch;
+}
+button[type=reset] {
+    background-color: #b304047b;
+    color: white;
+    padding: 5px;
+    min-width: 15ch;
 }
