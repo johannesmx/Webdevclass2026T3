@@ -1,0 +1,47 @@
+@media screen and (max-width:640px) {
+    .logo {
+        max-width: 60px;
+    }
+    .main-header {
+        padding: 5px;
+        flex-wrap: wrap;
+    }
+    .main-navigation {
+        min-width: 100%;
+        flex-wrap: wrap;
+        gap: 0px;
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 1s;
+    }
+    .main-navigation.open {
+        max-height: 50vh;
+    }
+    .main-navigation a {
+        min-width: 100%;
+    }
+    #nav-button {
+        display: block;
+    }
+    .content {
+        margin: 2em 0.5em;
+    }
+    .row {
+        flex-wrap: wrap;
+    }
+    .home-banner {
+        min-height: 40vh;
+    }
+    .home-banner h1 {
+        font-size: 24px;
+    }
+    .home-banner h2 {
+        font-size: 20px;
+    }
+    .card {
+        min-width: 100%;
+    }
+    .card img {
+        aspect-ratio: 4/3;
+    }
+}
