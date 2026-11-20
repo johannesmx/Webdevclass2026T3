@@ -12,8 +12,10 @@
         href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="responsive.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="site.js"></script>
 </head>
 
@@ -27,14 +29,37 @@
         </button>
         <nav class="main-navigation">
             <a href="index.html">Home</a>
-            <a href="portfolio.html">Portfolio</a>
+            <div class="dropdown">
+                <a href="#">Portfolio</a>
+                <div class="dropdown-menu">
+                    <a href="drawings.html">Drawings</a>
+                    <a href="animations.html">Animations</a>
+                </div>
+            </div>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-    <div class="home-banner">
+    <!-- <div class="home-banner">
         <h1>Welcome to my website</h1>
         <h2>Check out my content!</h2>
+    </div> -->
+    <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "autoPlay" : 5000 }'>
+        <div class="slide one">
+            <h2>One</h2>
+        </div>
+        <div class="slide two">
+            <h2>Two</h2>
+        </div>
+        <div class="slide three">
+            <h2>Three</h2>
+        </div>
+        <div class="slide four">
+            <h2>Four</h2>
+        </div>
+        <div class="slide five">
+            <h2>Five</h2>
+        </div>
     </div>
     <main class="content">
         <!-- row 1 -->

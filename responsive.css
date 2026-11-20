@@ -44,4 +44,7 @@
     .card img {
         aspect-ratio: 4/3;
     }
+    .slide {
+        min-height: 50vh;
+    }
 }

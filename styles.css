@@ -12,9 +12,11 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto auto 1fr auto;
+   
 }
 .main-header {
     padding: 15px 30px;
+    padding-bottom: 0px;
     background-color: #06042d;
     display: flex;
     flex-direction: row;
@@ -44,6 +46,31 @@ body {
     flex-direction: row;
     gap: 30px;
 }
+/* ------------------ dropdown menu -------------------------- */
+.dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    z-index: 9999;
+    background-color: black;
+    max-height: 0px;
+    overflow: hidden;
+    min-width: 100%;
+}
+.dropdown {
+    position: relative;
+}
+.dropdown a {
+    display: block;
+}
+.dropdown > a::after {
+    content: "\25bc";
+    margin-left: 0.5em;
+}
+.dropdown:hover > .dropdown-menu{
+    max-height: 200px;
+}
 .logo {
     width: 100px;
 }
@@ -68,6 +95,35 @@ img {
 .home-banner h1, .home-banner h2 {
     text-shadow: 0px 0px 1px #000000;
     color: bisque;
+}
+/* ---------------- slideshow ------------ */
+.slide {
+    min-width: 100%;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: burlywood;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.one {
+    background-color: aquamarine;
+    background-image: url("images/pexels-radis-26311729.jpg");
+}
+.two {
+    background-color:beige;
+}
+.three {
+    background-color:chocolate;
+}
+.four {
+    background-color:coral;
+}
+.five {
+    background-color:azure;
 }
 .content {
     margin: 2em 12em;
@@ -118,6 +174,7 @@ img {
     margin-bottom: 10px;
     border: solid #eeeeee 2px;
     border-radius: 6px;
+    box-sizing: border-box;
 }
 button[type=submit] {
     background-color: green;

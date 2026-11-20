@@ -4,22 +4,58 @@
 <head>
     <title>About Page</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="site.js"></script>
 </head>
 
 <body>
-    <header>
+    <header class="main-header">
         <a href="index.html">
-            <img src="globe-solid.png" alt="globe logo">
+            <img class="logo" src="globe-solid.png" alt="globe logo">
         </a>
-        <nav>
+        <button type="button" id="nav-button">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="main-navigation">
             <a href="index.html">Home</a>
+           <div class="dropdown">
+                <a href="#">Portfolio</a>
+                <div class="dropdown-menu">
+                    <a href="drawings.html">Drawings</a>
+                    <a href="animations.html">Animations</a>
+                </div>
+            </div>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-    <h1>About Page</h1>
+    <div></div>
+    <main class="content"></main>
+    <footer class="main-footer">
+        <nav class="social-links">
+            <a href="https://facebook.com">
+                <i class="fa-brands fa-square-facebook"></i>
+            </a>
+            <a href="https://instagram.com">
+                <i class="fa-brands fa-square-instagram"></i>
+            </a>
+            <a href="https://tiktok.com">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+        </nav>
+        <p class="copyright">&copy; Johannes 2026</p>
+    </footer>
 </body>
 
 </html>
