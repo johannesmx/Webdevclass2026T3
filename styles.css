@@ -1,10 +1,16 @@
+:root {
+    --primary-dark: #06042d;
+    --primary-light: #ffe4c4;
+    --main-font: "Roboto", sans-serif;
+}
+
 * {
     /* border-style: solid; */
     /* border-color: blue; */
 }
 body {
     margin: 0px;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--main-font);
     background-image: url("images/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,7 +23,7 @@ body {
 .main-header {
     padding: 15px 30px;
     padding-bottom: 0px;
-    background-color: #06042d;
+    background-color: var(--primary-dark);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -26,20 +32,20 @@ body {
 #nav-button {
     align-self: center;
     background-color: transparent;
-    color: bisque;
+    color: var(--primary-light);
     font-size: 36px;
     border: 1px solid transparent;
     display: none;
 }
 .main-navigation a{
-    color: bisque;
+    color: var(--primary-light);
     text-decoration: none; 
     font-family: "Bungee", sans-serif;
     padding: 15px;
 }
 .main-navigation a:hover {
     color: #06042d;
-    background-color:bisque;
+    background-color:var(--primary-light);
 }
 .main-navigation {
     display: flex;
@@ -140,7 +146,7 @@ img {
 }
 
 .main-footer {
-    background-color: #06042d;
+    background-color: var(--primary-dark);
 }
 .social-links {
     display: flex;
@@ -187,4 +193,10 @@ button[type=reset] {
     color: white;
     padding: 5px;
     min-width: 15ch;
+}
+
+.map-box {
+    aspect-ratio: 16/9;
+   width: 100%;
+
 }
